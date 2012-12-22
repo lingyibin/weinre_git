@@ -1,0 +1,11 @@
+---
+layout: default
+title: ²âÊÔ
+---
+<h2>{{ page.title }}</h2>
+<p>²âÊÔÒ³Ãæ</p>
+<ul>
+¡¡¡¡{% for post in site.posts %}
+¡¡¡¡¡¡¡¡<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+¡¡¡¡{% endfor %}
+</ul>
